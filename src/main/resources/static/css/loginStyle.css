@@ -1,0 +1,82 @@
+*{
+  margin:0;
+  padding:0;
+  color: #e3e3e3;
+  font-family: "Cambria Math", math;
+  box-sizing: border-box;
+}
+
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #17bba4, #1a1338);
+}
+
+.login-card{
+  flex: 1;
+  max-width: 500px;
+  background: #0c242e73;
+  padding: 48px 50px;
+}
+
+.login-header,.login-body .login-row p,.login-body .login-row{
+  margin-bottom: 20px;
+}
+
+.login-header span{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.login-body .login-row p,.login-body .login-row p span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.login-body .login-row input:not([type="checkbox"]){
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  background-color: #1e363c;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.login-body .login-row input[type="checkbox"]{
+  height: 16px;
+  width: 16px;
+  accent-color: #17bba4;
+  margin-right: 10px;
+  position: relative;
+}
+
+.login-body .login-row input::placeholder{
+  font-size: 12px;
+}
+
+.login-body .login-row p a{
+  text-decoration: none;
+  color: #207fd9;
+}
+
+.login-body .login-row p a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #1c6bb7;
+}
+
+.login-row .login-btn{
+  width: 100%;
+  padding: 13px 0;
+  background-color: #207fd9;
+  border: none;
+  font-size: 18px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHM Admin</title>
+    <link rel="stylesheet" href="/css/loginStyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <form action="doLogin" method="post" class="login-card">
+            <div class="login-header">
+                <span>Login</span>
+            </div>
+            <div class="login-body">
+                <div class="login-row">
+                    <p>
+                        <label for="username">
+                            用户名或邮箱*
+                        </label>
+                    </p>
+                    <input id="username" placeholder="用户名或邮箱" type="text" name="username" />
+                </div>
+                <div class="login-row">
+                    <p>
+                        <label for="password">
+                            密码*
+                        </label>
+                    </p>
+                    <input id="password" placeholder="密码" type="password" name="password" />
+                </div>
+                <div class="login-row">
+                    <p>
+                        <span>
+                            <input type="checkbox" name="remember" id="remember" />
+                            <label for="remember">
+                                记住我
+                            </label>
+                        </span>
+                        <a href="#">Forgot Password</a>
+                    </p>
+                </div>
+                <div class="login-row">
+                    <button class="login-btn" type="submit">login</button>
+                </div>
+                <div class="login-row">
+                    <p>
+                        <span>
+                            没有账号 ?
+                            <a href="#">
+                                点击这里
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

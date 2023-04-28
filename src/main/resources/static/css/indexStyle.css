@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    color: #e3e3e3;
+    font-family: "Cambria Math", math;
+    box-sizing: border-box;
+}
+
+.index-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.index-left{
+    flex: 1;
+    max-width: 230px;
+    background: #191c24;
+}
+
+.index-left-body{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.index-left .index-title{
+    width: 100%;
+    padding: 25px 0;
+    margin-left: 20px;
+}
+
+.index-left .index-title span{
+    font-size: 25px;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
+
+.index-userDetail{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.index-userDetail .index-userDetail-left{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.index-userDetail .index-userDetail-left img{
+    width: 100%;
+    border-radius: 50%;
+    background-size: 80px;
+}
+
+.index-userDetail .index-userDetail-right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.index-userDetail .index-userDetail-right .detail .username{
+    height: max-content;
+    font-size: 18px;
+}
+
+.index-userDetail .index-userDetail-right .detail .role{
+    height: max-content;
+    font-size: 14px;
+    color: #b12ab1;
+}
+
+.index-left .nav-title{
+    margin-bottom: 10px;
+}
+
+.index-left .nav-title span{
+    font-size: 20px;
+    color: #7b8ab1;
+    margin-left: 20px;
+}
+
+.index-left .index-navigation{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% + 17px);
+    flex: 1;
+    color: #7b8ab1;
+}
+
+.index-left .index-navigation *{
+    color: inherit;
+}
+
+.index-navigation .nav .nav-item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.index-navigation .nav .nav-item:hover{
+    background-color: #000;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    transition: color .5s linear;
+}
+
+.index-navigation .nav .nav-item .nav-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.index-navigation .nav .nav-item .nav-link .menu-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-top: 6px;
+    background-color: #404658;
+    margin-right: 10px;
+    color: #8f5fe8;
+}
+
+.index-navigation .nav .nav-item .nav-link .menu-title{
+    font-size: 14px;
+}
